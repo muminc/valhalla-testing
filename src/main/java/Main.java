@@ -1,10 +1,10 @@
-public class Main1 {
+public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Testing Non Valhalla");
-        long start = System.currentTimeMillis();
         int length = 100_000_000;
+        System.out.println("Testing Non Valhalla - Creating array of Point3D, length="+length);
+        long start = System.currentTimeMillis();
         Point3D[] myArray = new Point3D[length];
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = new Point3D(0f, 0f, 0f);
